@@ -1,0 +1,35 @@
+<!-- 1. Connecting REST API with MongoDB Database
+
+REST APIs connect applications with MongoDB to perform CRUD operations such as creating, reading, updating, and deleting employee data. This helps store and manage backend information efficiently.
+
+2. MongoDB Native Driver vs Mongoose ODM Driver
+
+The MongoDB native driver directly interacts with the database and provides low-level operations. Mongoose ODM simplifies database management by providing schemas, models, and validations.
+
+3. Creating Schema & Model
+
+A schema defines the structure and rules of employee data, while a model is used to perform database operations like insert, update, delete, and fetch records.
+
+4. Schema Validations and Indexing
+
+Schema validations ensure only valid employee data is stored in the database. Indexing improves query performance and speeds up data searching.
+
+5. Employee REST API Implementation
+
+Employee REST APIs are created to handle operations like adding, viewing, updating, and deleting employee records using HTTP methods.
+
+6. Hashing Password
+
+Password hashing converts employee passwords into encrypted form before storing them in the database to improve security and protect sensitive data.
+
+7. Error Handling Middleware
+
+Error handling middleware catches application errors and sends proper error responses without crashing the server.
+
+8. Dealing with Unavailable Resources
+
+Applications handle unavailable resources by returning proper status codes like 404 when employee records or API routes are not found.
+
+9. Running Validators During Update Operations
+
+Validators during update operations ensure updated employee data follows schema rules and maintains data consistency in the database. -->
