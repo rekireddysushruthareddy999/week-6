@@ -1,6 +1,6 @@
 import exp from "express";
 import { connect } from "mongoose";
-import { empRoute } from "./API/empApp.js";
+import { empRoute } from "./API/EmpApp.js";
 import cors from "cors";
 import dotenv from "dotenv";
 
