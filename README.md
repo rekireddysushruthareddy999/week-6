@@ -1,5 +1,6 @@
 # Employee Management System
 
+<<<<<<< HEAD
 A full-stack React + Vite frontend with an Express + MongoDB backend for managing employees.
 
 ## Project Structure
@@ -102,3 +103,50 @@ The backend exposes the following employee routes under `/emp-api`:
 - `npm run dev` - start Vite development server
 - `npm run build` - build the frontend for production
 - `npm run preview` - preview the production build
+=======
+This repository contains a full-stack Employee Management System with separate frontend and backend folders.
+
+## Summary
+
+- `backend/` hosts an Express + MongoDB REST API for employee management.
+- `frontend/` hosts a React + Vite app that consumes the backend API.
+- The backend exposes routes under `/emp-api/employees`.
+- The frontend provides pages for creating, listing, viewing, and editing employees.
+
+## Architecture
+
+- Backend:
+  - `server.js` starts the Express server and connects to MongoDB.
+  - `API/EmpApp.js` defines employee routes.
+  - `models/EmpModel.js` defines Mongoose schema and model.
+- Frontend:
+  - React Router handles page navigation.
+  - `axios` is used to call the backend API.
+  - Forms are managed with `react-hook-form`.
+
+## Getting Started
+
+1. Set up the backend first:
+   - Open a terminal in `backend/`
+   - Install dependencies: `npm install`
+   - Create `.env` with `MONGO_URI`, `PORT`, and `CLIENT_URL`
+   - Start the server: `npm run dev`
+
+2. Set up the frontend:
+   - Open a terminal in `frontend/`
+   - Install dependencies: `npm install`
+   - Create `.env` with `VITE_API_URL=http://localhost:7000`
+   - Start the app: `npm run dev`
+
+3. Open the frontend in the browser, usually at `http://localhost:5173`.
+
+## Quick Links
+
+- Backend details: `backend/README.md`
+- Frontend details: `frontend/README.md`
+
+## Notes
+
+- Ensure MongoDB is running and reachable via `MONGO_URI`.
+- The frontend expects the backend API at the URL configured in `VITE_API_URL`.
+>>>>>>> ed3b986 (updated readme)
